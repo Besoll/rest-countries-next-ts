@@ -1,0 +1,30 @@
+.container {
+  @apply flex transition-all bg-white h-14 max-w-[375px] items-center p-4 shadow-sm rounded-md border-gray-200 border;
+
+  svg {
+    @apply w-5 h-5 fill-primary mr-2;
+  }
+
+  input {
+    @apply w-full transition-all bg-white text-primary;
+    &::placeholder {
+      @apply text-primary;
+    }
+  }
+}
+
+:global(.dark) .container {
+  @apply flex  bg-primary border-none;
+
+  input {
+    @apply bg-primary text-white;
+  }
+
+  input::placeholder {
+    @apply text-white;
+  }
+
+  svg {
+    @apply fill-white;
+  }
+}

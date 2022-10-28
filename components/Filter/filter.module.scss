@@ -1,0 +1,13 @@
+.container {
+  @apply transition-all flex justify-between h-14 items-center  p-4 w-[190px] rounded-md shadow-sm appearance-none bg-no-repeat bg-[length:10px_10px] md:bg-[length:13px_13px] border-gray-200 border;
+  background-position: calc(100% - 16px);
+  background-image: url("https://ik.imagekit.io/hoa6us8np/down-arrow_Jeefd9gyu.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1659362676683");
+  .first {
+    @apply hidden;
+  }
+}
+
+:global(.dark) .container {
+  @apply bg-primary  text-white border-none;
+  background-image: url("https://ik.imagekit.io/hoa6us8np/Country_APP/image_HMG7rNJ0E.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659363517577");
+}

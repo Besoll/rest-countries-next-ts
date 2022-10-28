@@ -1,0 +1,66 @@
+.container {
+  @apply text-primary bg-white lg:grid  lg:items-start;
+
+  span {
+    @apply mr-[6px] font-semibold;
+  }
+  h1 {
+    @apply text-xl whitespace-pre-line font-bold mb-4 break-words lg:text-2xl;
+  }
+}
+.back {
+  margin: 0 16px;
+  height: 5rem;
+}
+
+.first_block {
+  @apply flex  lg:col-start-1 lg:row-start-2 lg:row-end-4 w-[375px] lg:w-[500px];
+  margin: 0 auto;
+}
+.second_block {
+  @apply lg:flex lg:justify-start lg:row-start-2;
+
+  div:nth-child(2) {
+    @apply lg:flex lg:flex-col lg:justify-center lg:ml-5;
+  }
+}
+
+.third_block {
+  @apply lg:col-start-2 lg:row-start-3 lg:row-end-4;
+}
+
+.first_block,
+.second_block {
+  p,
+  ul {
+    @apply flex mr-[6px] mb-[10px] lg:flex-wrap;
+  }
+}
+
+.first_block,
+.second_block,
+.third_block {
+  @apply p-[14px] bg-white;
+}
+
+.flag {
+  @apply h-56 bg-no-repeat bg-center bg-cover mt-[35px] mb-[40px]  lg:m-[50px_auto];
+}
+
+.boundary_container {
+  @apply flex flex-wrap items-center gap-2 mt-6 lg:max-w-[520px];
+  a {
+    @apply grid w-[168px];
+  }
+}
+
+:global(.dark) .container {
+  @apply text-white bg-primaryDark;
+}
+
+:global(.dark) .first_block,
+:global(.dark) .first_block,
+:global(.dark) .second_block,
+:global(.dark) .third_block {
+  @apply bg-primaryDark;
+}

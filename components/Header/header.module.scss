@@ -1,0 +1,32 @@
+.container {
+  @apply transition-all flex justify-between h-20 md:p-8 mb-5 items-center p-4 shadow-sm;
+
+  .title__container {
+    @apply text-black font-bold;
+  }
+
+  button {
+    &:hover {
+      svg {
+        @keyframes flip {
+          from {
+            transform: rotateY(0deg);
+          }
+          to {
+            transform: rotateY(180deg);
+          }
+        }
+        animation: flip 2s ease-in-out infinite;
+        transform-style: preserve-3d;
+      }
+    }
+  }
+}
+
+:global(.dark) .container {
+  @apply bg-primary;
+
+  .title__container {
+    @apply text-white;
+  }
+}

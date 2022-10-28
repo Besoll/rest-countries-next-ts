@@ -1,0 +1,14 @@
+.container {
+  @apply flex flex-col h-screen justify-between;
+}
+
+.loading {
+  @apply grid h-full items-center;
+}
+
+.loaded {
+  @apply bg-white;
+}
+:global(.dark) .loaded {
+  @apply bg-primaryDark;
+}

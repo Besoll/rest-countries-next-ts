@@ -1,0 +1,29 @@
+.container {
+  @apply bg-white rounded-lg shadow-md w-full h-full  break-words;
+}
+
+.header {
+  @apply flex items-center justify-between flex-wrap w-full h-[170px] bg-no-repeat bg-center bg-cover rounded-t-lg;
+
+  img {
+    @apply w-auto h-auto rounded-t-lg;
+  }
+}
+
+.body {
+  @apply text-primary p-6;
+
+  h1 {
+    @apply text-xl whitespace-pre-line font-bold mb-4 break-words;
+  }
+  li {
+    @apply mb-2;
+  }
+}
+
+:global(.dark) .container {
+  @apply bg-primary;
+  .body {
+    @apply text-white;
+  }
+}
