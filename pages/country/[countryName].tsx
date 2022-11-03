@@ -1,18 +1,21 @@
 import Link from "next/link";
-import s from "../../styles/info-page.module.scss";
 import { useEffect, useState } from "react";
 import { Button, Footer, Header, PageInfo } from "../../components/";
 import { GetCountries } from "../../services/getCountries";
+import styles from "../../styles/info-page.module.scss";
 import Back from "../../assets/back.svg";
 
 export async function getStaticPaths() {
   const country = new GetCountries();
   const countries = await country.getCountries();
+
   const paths = countries.map((country: { name: { common: string } }) => ({
     params: {
       countryName: country.name.common,
     },
   }));
+
+  // { fallback: false } means other routes should 404
   return { paths, fallback: false };
 }
 
@@ -43,10 +46,10 @@ export default function CountryDetail({ countryName }) {
   }, [countryName]);
 
   return (
-    <div className={s.container}>
+    <div className={styles.container}>
       <Header />
-      <div className={s.main_info}>
-        <div className={s.back}>
+      <div className={styles.main_info}>
+        <div className={styles.back}>
           <Link href="/" passHref>
               <Button
                 text={"Back"}

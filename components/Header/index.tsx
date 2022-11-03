@@ -1,4 +1,4 @@
-import s from "./header.module.scss";
+import styles from "./header.module.scss";
 import Moon from "../../assets/moon-icon.svg";
 import Sun from "../../assets/sun-icon.svg";
 
@@ -16,12 +16,12 @@ export function Header() {
   console.log(darkMode.value);
 
   return (
-    <header className={s.container}>
-      <div className={s.title__container}>
+    <header className={styles.container}>
+      <div className={styles.title__container}>
         <h1>Where in the world?</h1>
       </div>
       <Button
-        text=""
+        text="Dark Mode"
         onClick={() => switchMode({ darkMode, setDarkMode })}
         icon={darkMode.value ? <Moon /> : <Sun />}
         type="primary"

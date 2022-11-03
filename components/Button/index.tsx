@@ -6,7 +6,7 @@ export  function Button({
   onClick,
   type,
 }: {
-  text: string;
+  text?: string;
   icon?: React.ReactNode;
   onClick?: () => void;
   type?: "primary" | "secondary";

@@ -1,5 +1,6 @@
-import s from "./search-bar.module.scss";
+import React from "react";
 import { GetCountries } from "../../services/getCountries";
+import styles from "./search-bar.module.scss";
 
 export function SearchBar({
   placeholder,
@@ -35,7 +36,7 @@ export function SearchBar({
   };
 
   return (
-    <div className={s.container}>
+    <div className={styles.container}>
       {icon && <button type="submit">{icon}</button>}
       <input
         type="text"

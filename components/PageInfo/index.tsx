@@ -4,7 +4,6 @@ import { GetCountries } from "../../services/getCountries";
 import { numberWithCommas } from "../../utils/numberWithCommas";
 import { Button } from "../Button";
 import style from "./page-info.module.scss";
-import Image from "next/image";
 import Back from "../../assets/back.svg";
 
 export function PageInfo({
@@ -40,13 +39,12 @@ export function PageInfo({
     getBorderNAme.getCountriesByCode(borderCountries).then((data) => {
       setBorderCountryName(data);
     });
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [name]);
 
   return (
     <div className={style.container}>
       <div className={style.first_block}>
-        <Image src={flag} alt={name} />
+        <img src={flag} alt={name} />
       </div>
       <div className={style.second_block}>
         <div className={style.second_block_section_1}>
@@ -130,11 +128,11 @@ export function PageInfo({
               borderCountryName.map((borderCountry) => (
                 // eslint-disable-next-line react/jsx-key
                 <Link href={`/country/${borderCountry.name.common}`}>
-                    <Button
-                      type="secondary"
-                      text={borderCountry.name.common}
-                      key={borderCountry.name.common}
-                    />
+                  <Button
+                    type="secondary"
+                    text={borderCountry.name.common}
+                    key={borderCountry.name.common}
+                  />
                 </Link>
               ))}
           </>

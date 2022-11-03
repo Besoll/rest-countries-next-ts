@@ -6,7 +6,7 @@ import Link from "next/link";
 export function NotFound({ returnHome }: { returnHome?: boolean }) {
   return (
     <div className={style.container}>
-      <p>SORRY WE COULDN&apos;T FIND IT</p>
+      <p>SORRY WE COULD NOT FIND IT</p>
       <NotFoundIcOn />
       {returnHome ? (
         <Link href="/">

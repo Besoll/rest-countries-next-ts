@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { GetCountries } from "../../services/getCountries";
-import s from "./filter.module.scss";
+import styles from "./filter.module.scss";
 
 export  function Filter({
   type,
@@ -15,8 +15,6 @@ export  function Filter({
 }) {
   const [selectedOption, setSelectedOption] = useState("");
 
-
-  
   const handleChange = (event: React.ChangeEvent<{ value: string }>) => {
     let selectValue = event.target.value as string;
     setSelectedOption(selectValue);
@@ -48,7 +46,7 @@ export  function Filter({
         onChange={(e) => {
           handleChange(e);
         }}
-        className={s.container}
+        className={styles.container}
         name={type}
         id={type}
       >

@@ -1,5 +1,7 @@
-import Link from "next/link"
-import s from "./country-card.module.scss"
+import React from "react";
+import Link from "next/link";
+
+import styles from "./country-card.module.scss";
 
 export  function CountryCard({
   name,
@@ -17,24 +19,23 @@ export  function CountryCard({
 
   return (
     <Link href={`/country/${name}`}>
-      
-        <div className={s.container}>
-          <div
-            className={s.header}
-            style={{
-              backgroundImage: `url(${flag})`,
-            }}
-          ></div>
+      <div className={styles.container}>
+        <div
+          className={styles.header}
+          style={{
+            backgroundImage: `url(${flag})`,
+          }}
+        ></div>
 
-          <div className={s.body}>
-            <h1>{name}</h1>
-            <ul>
-              <li>Population: {population}</li>
-              <li>Region: {region}</li>
-              <li>Capital: {capital}</li>
-            </ul>
-          </div>
+        <div className={styles.body}>
+          <h1>{name}</h1>
+          <ul>
+            <li>Population: {population}</li>
+            <li>Region: {region}</li>
+            <li>Capital: {capital}</li>
+          </ul>
         </div>
+      </div>
     </Link>
   );
 }

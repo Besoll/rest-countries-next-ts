@@ -1,35 +1,78 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Frontend Mentor - REST Countries API with color theme switcher
 
-## Getting Started
+This is a solution to the [REST Countries API with color theme switcher challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca).This project was developed in React, it is a Frontend Mentor challenge, it allows searching and filtering countries through an API, this application has a dark and light mode.
 
-First, run the development server:
+## 🧐 What's inside?
 
-```bash
-npm run dev
+This Starter includes
+
+- ⚡️ [Next.js 12](https://nextjs.org/) - The React Framework for Production
+- ⚛️ [React 18](https://reactjs.org/) - A JavaScript library for building user interfaces
+- 🧁 [TailwindCSS v3](https://tailwindcss.com/) - A utility-first CSS framework packed with classes
+- ✨ [TypeScript](https://www.typescriptlang.org/) - TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.
+- 🎉 [Sass](https://sass-lang.com/) - Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.
+- 📏 [ESLint](https://eslint.org/) — Find and fix problems in your JavaScript code.
+- 🦋 [Prettier](https://prettier.io/) — An opinionated code formatter.
+- 🐶 [Husky](https://github.com/typicode/husky) - Husky improves your commits and more 🐶 woof!
+- 🐶 [Lint Staged](https://github.com/okonet/lint-staged) — Run linters against staged git files and don't let 💩 slip into your code base!
+
+## Overview
+
+## 🚀 Getting Started
+
+```
+# Install dependencies
+
+npm install
 # or
+yarn install
+
+# Start development server
+
 yarn dev
+# or
+npm run dev
+
+# Build for production
+
+yarn build
+# or
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### The challenge
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Users should be able to:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- See all countries from the API on the homepage
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- Search for a country using an input field
 
-## Learn More
+- Filter countries by region
 
-To learn more about Next.js, take a look at the following resources:
+- Click on a country to see more detailed information on a separate page
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Click through to the border countries on the detail page
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Toggle the color scheme between light and dark mode (optional)
 
-## Deploy on Vercel
+### Screenshot
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+![Mobile view of solution](./screenshot/mobile.png)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# rest-countries-next-ts
+![Mobile active view of solution](./screenshot/mobile-active.png)
+
+![Desktop view of solution](./screenshot/desktop.png)
+
+![Desktop active view of solution](./screenshot/desktop-active.png)
+
+### Links
+
+- Solution URL: [Link to solution URL here](https://www.frontendmentor.io/solutions/rest-countries-api-with-color-theme-switcher-PEPrHnrjaL)
+- Live Site URL: [Link to live site](https://countries-api-test.netlify.app/)
+
+## Author
+
+- Frontend Mentor - [@Georgeb79](https://www.frontendmentor.io/profile/Georgeb779)
+- Linkedin - [@GeorgeBaez](https://www.linkedin.com/in/george-baez/)
+- Twitter - [@Georgeb779](https://twitter.com/Georgeb779)
